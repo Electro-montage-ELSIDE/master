@@ -146,10 +146,14 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
-    height: 130px;
+    height: auto;
 }
 
 .logo{
-    height: 60px;
-    margin-left: 30px;
+    margin-left: 3px;
+}
+
+#logo {
+	height: 150px;
+	margin-left: 0px;
 }
