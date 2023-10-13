@@ -3,6 +3,7 @@ import ReactPlayer from 'react-player';
 
 export function Video() {
 
+
     return (
         
             <div className='video-container'>

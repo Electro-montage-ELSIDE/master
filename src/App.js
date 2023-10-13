@@ -1,23 +1,31 @@
 import './App.css';
-import { Video } from './Video';
 import { Header } from './Header';
-import { Maintext } from './Maintext';
-import { Projects } from './Projects';
 import { Footer } from './Footer';
-import { Partners } from './Partners';
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import Contact from './pages/Contact';
+import ProjectPage  from './pages/ProjectPage';
+
+
+
 
 
 function App() {
 
   return (
-    <div className="App">
-      <Header />
-      <Video />
-      <Maintext />
-      <Projects />
-      <Partners />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/projects/*' element={<ProjectPage />} />
+
+          </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
