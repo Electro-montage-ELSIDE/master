@@ -4,6 +4,7 @@ import electrical_image from './images/electrical_inginering.webp'
 import fire from './images/fire.webp'
 import low from './images/low_voltage.jpg'
 import design from './images/making_desine.jpeg' 
+import { Link } from 'react-router-dom'
 
 
 export function Maintext(){
@@ -22,7 +23,9 @@ export function Maintext(){
                 {/* first servis pack */}
                 <div className='services'>
                     <div>
-                        <button className='service_button'>electrical inginering</button>
+                        <Link to={"/service/engineering"} >
+                            <button className='service_button'>Electrical ingineering</button>
+                        </Link>
                     </div>
 
                     <div>
