@@ -1,0 +1,11 @@
+.fire_container{
+    height: 700px;
+    background:#181E27;
+    
+}
+
+.fire_content{
+    height: 200px;
+    color: aliceblue;
+    margin-left: 40px;
+}

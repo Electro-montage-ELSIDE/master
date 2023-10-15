@@ -4,20 +4,20 @@ import electrical_image from './images/electrical_inginering.webp'
 import fire from './images/fire.webp'
 import low from './images/low_voltage.jpg'
 import design from './images/making_desine.jpeg' 
-import { Link } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 
 export function Maintext(){
     return (
         <div className='big_main'>
-            <dic className='main_service_cont' >
+            <div className='main_service_cont' >
                 <div className='service_container'>
                     <h2 className='service_header' >S e r v i c e</h2>
                     <img src={service} alt='service icon' className='service_icon' />
 
                 </div>
                 
-            </dic>
+            </div>
 
             <div className='services_container'>
                 {/* first servis pack */}
@@ -36,7 +36,9 @@ export function Maintext(){
                 {/* second servis pack */}
                 <div className='services'>
                     <div>
-                        <button className='service_button'>fire fighting</button>
+                        <Link to={'/service/firefighting'} >
+                            <button className='service_button'>fire fighting</button>
+                        </Link>
                     </div>
 
                     <div>
