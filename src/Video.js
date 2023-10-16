@@ -11,7 +11,7 @@ export function Video() {
                     className='video'
                     url='./video4.mp4'
                     playing={true}
-                    controls={true}
+                    controls={false}
                     loop={true}
                     width='100%'
                     height='100%'

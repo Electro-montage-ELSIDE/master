@@ -47,8 +47,6 @@ export function Header() {
             {/* <img src='./company_logo.png' alt='elside company logo' className='logo' /> */}
             <div alt='elside company logo' className='logo' />
                 <div className='eddited_logo'  >
-                    
-                        
                         <a href='/' id='logo' aria-label='Link to go to the homepage'>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                             width="130.000000pt" height="120.000000pt" viewBox="0 0 300.000000 158.000000"
@@ -108,16 +106,19 @@ export function Header() {
             <div className="container">
                 <div className="btn"><Link to={'/'}>{content[language].home}</Link></div>
                 <div className="btn"><a href="three">{content[language].company}</a></div>
-                <div className="btn"><a href="three">{content[language].services}</a></div>
+                <div className="btn"><Link to={'/service'}  >{content[language].services}</Link></div>
                 <div className="btn"><Link to={'/projects'} >{content[language].projects}</Link></div>
                 <div className="btn"><Link  to={'/contact'}  >{content[language].contact}</Link></div> 
-                <Select 
-                    options={languageOptions}
-                    defaultValue={languageOptions[0]}
-                    onChange={handleLanguageChange} 
-                    className="language-select"
-                    classNamePrefix="mySelect"
-                />
+                <div>
+                    <Select 
+                        options={languageOptions}
+                        defaultValue={languageOptions[0]}
+                        onChange={handleLanguageChange} 
+                        className="language-select"
+                        classNamePrefix="mySelect"
+                    />
+                </div>
+               
             </div>
         </header>
     );

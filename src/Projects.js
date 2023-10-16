@@ -36,7 +36,9 @@ export function  Projects(){
                 {/* second servis pack */}
                 <div className='services'>
                     <div>
-                        <button className='service_button'>complited</button>
+                        <Link to={'/projects/complited'} >
+                            <button className='service_button'>complited</button>
+                        </Link>
                     </div>
 
                     <div>

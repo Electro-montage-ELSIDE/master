@@ -1,7 +1,8 @@
+import './ProjectPage.css';
 import { Routes, Route } from 'react-router-dom';
 import { Projects } from '../Projects';
 import OngoingPage from './CorrentprojectPage';
-import './ProjectPage.css';
+import ComplitedPage from './ComplitedPage';
 
 
 
@@ -12,7 +13,7 @@ export default function ProjectPage() {
             <Routes>
                 <Route index element={<Projects />} />
                 <Route path="ongoing" element={<OngoingPage />} />
-                {/* Add more routes as needed */}
+                <Route path='complited' element={<ComplitedPage />}/>
             </Routes>
         </div>
     );
