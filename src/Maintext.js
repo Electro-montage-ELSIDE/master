@@ -10,64 +10,57 @@ import { Link} from 'react-router-dom'
 export function Maintext(){
     return (
         <div className='big_main'>
-            <div className='main_service_cont' >
-                <div className='service_container'>
-                    <h2 className='service_header' >S e r v i c e</h2>
-                    <img src={service} alt='service icon' className='service_icon' />
-
-                </div>
                 
-            </div>
-
-            <div className='services_container'>
-                {/* first servis pack */}
-                <div className='services'>
-                    <div>
-                        <Link to={"/service/engineering"} >
-                            <button className='service_button'>Electrical ingineering</button>
-                        </Link>
+                    <div className='main_service_cont' >
+                        <div className='service_container'>
+                            <h2 className='service_header' >S e r v i c e</h2>
+                            <img src={service} alt='service icon' className='service_icon' />
+                        </div>
+                        
                     </div>
 
-                    <div>
-                        <img src={electrical_image} alt="electrical inginering"  className='electrical'/> 
-                    </div>
+                    <div className='service_buttons_all'>
+                        {/* first servis pack */}
+                        <div className='serviceItem'>
+                            <div className="buttonContainer">
+                                <Link to={"/service/engineering"}>
+                                    <button className='service_button'>Electrical engineering</button>
+                                    <img src={electrical_image} alt="electrical engineering" className='hoverImage'/>
+                                </Link>
+                            </div>
+                        </div>
+
+
+                        {/* second servis pack */}
+                        <div className='serviceItem'>
+                            <div className="buttonContainer">
+                                <Link to={"/service/engineering"}>
+                                    <button className='service_button'>Electrical engineering</button>
+                                    <img src={fire} alt="electrical engineering" className='hoverImage'/>
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* third servis pack */}
+                        <div className='serviceItem'>
+                            <div className="buttonContainer">
+                                <Link to={"/service/engineering"}>
+                                    <button className='service_button'>Electrical engineering</button>
+                                    <img src={low} alt="electrical engineering" className='hoverImage'/>
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* fourth servis pack */}
+                        <div className='serviceItem'>
+                            <div className="buttonContainer">
+                                <Link to={"/service/engineering"}>
+                                    <button className='service_button'>Electrical engineering</button>
+                                    <img src={design} alt="electrical engineering" className='hoverImage'/>
+                                </Link>
+                            </div>
+                        </div>
                 </div>
-
-                {/* second servis pack */}
-                <div className='services'>
-                    <div>
-                        <Link to={'/service/firefighting'} >
-                            <button className='service_button'>fire fighting</button>
-                        </Link>
-                    </div>
-
-                    <div>
-                        <img src={fire} alt="electrical inginering"  className='electrical'/> 
-                    </div>
-                </div>
-
-                {/* third servis pack */}
-                <div className='services'>
-                    <div>
-                        <button className='service_button'>exstra low voltage systems</button>
-                    </div>
-
-                    <div>
-                        <img src={low} alt="electrical inginering"  className='electrical'/> 
-                    </div>
-                </div>
-
-                {/* fourth servis pack */}
-                <div className='services'>
-                    <div>
-                        <button className='service_button'>Design works</button>
-                    </div>
-
-                    <div>
-                        <img src={design} alt="electrical inginering"  className='electrical'/> 
-                    </div>
-                </div>
-            </div>
             
         </div>
     )

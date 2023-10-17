@@ -14,17 +14,17 @@ export function  Projects(){
             <div className='main_project_cont' >
                 <div className='project_container'>
                     <h2 >P r o j e c t s</h2>
-                    <img src={projects} alt='service icon' className='service_icon' />
+                    <img src={projects} alt='service icon' className='project_icon' />
                 </div>
-                
+                service
             </div>
 
             <div className='poject_container'>
                 {/* first servis pack */}
-                <div className='services'>
+                <div className='projects_'>
                     <div>
                         <Link to={'/projects/ongoing'}  >
-                            <button className='service_button'>ongoing</button>
+                            <button className='project_button'>ongoing</button>
                         </Link>
                     </div>
 
@@ -34,10 +34,10 @@ export function  Projects(){
                 </div>
 
                 {/* second servis pack */}
-                <div className='services'>
+                <div className='projects_'>
                     <div>
                         <Link to={'/projects/complited'} >
-                            <button className='service_button'>complited</button>
+                            <button className='project_button'>complited</button>
                         </Link>
                     </div>
 

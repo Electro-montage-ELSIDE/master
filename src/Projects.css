@@ -32,7 +32,7 @@
 
 }
 
-.service_icon{
+.project_icon{
     width: 40px;
     height: 40px;
 }
@@ -47,7 +47,7 @@
 }
 
 
-.services{
+.projects_{
     background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
     margin-left: 30px;
     margin-right: 30px;
@@ -82,7 +82,7 @@
     transform: scale(1.1); /* Adjust the scale factor as needed */
 }
 
-.service_button{
+.project_button{
     cursor: pointer;
     margin-top: 30px;
     height: 40px;
