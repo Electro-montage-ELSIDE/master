@@ -1,4 +1,49 @@
-.App{
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
+.App{
     height: 100%;
 }
+
+@keyframes zoomingAndBlurring {
+    0% {
+      transform: scale(0.9);
+      filter: blur(5px);
+    }
+    50% {
+      transform: scale(1.1);
+      filter: blur(0px);
+    }
+    100% {
+      transform: scale(0.9);
+      filter: blur(0px);
+    }
+  }
+  
+  .loadingScreen img {
+    max-width: 100%;
+    animation: zoomingAndBlurring 3s ease-in-out infinite;
+  }
+  
+  .loadingScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  .loadingScreen p {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+
+  .slogan{
+    font-size: 200px; /* Adjusted the font-size */
+    font-size: 150px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 10vw;
+    
+  }
