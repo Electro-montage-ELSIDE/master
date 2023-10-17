@@ -44,8 +44,6 @@ export function Header() {
 
     return (
         <header className='header'>
-            {/* <img src='./company_logo.png' alt='elside company logo' className='logo' /> */}
-            <div alt='elside company logo' className='logo' />
                 <div className='eddited_logo'  >
                         <a href='/' id='logo' aria-label='Link to go to the homepage'>
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +107,7 @@ export function Header() {
                 <div className="btn"><Link to={'/service'}  >{content[language].services}</Link></div>
                 <div className="btn"><Link to={'/projects'} >{content[language].projects}</Link></div>
                 <div className="btn"><Link  to={'/contact'}  >{content[language].contact}</Link></div> 
-                <div>
+                <div  >
                     <Select 
                         options={languageOptions}
                         defaultValue={languageOptions[0]}

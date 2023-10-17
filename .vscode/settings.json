@@ -1,3 +1,4 @@
 {
 "isGitignoreExtActive": true,
+"terminal.integrated.shellArgs.linux": ["-c", "nvm exec 20.8.1 bash"],
 }

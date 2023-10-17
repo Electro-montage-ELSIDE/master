@@ -1,94 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@700&family=Onest:wght@600&family=Overpass:wght@400;700&family=Space+Mono:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Young+Serif&display=swap');
+@media (min-width: 600px){
 
+    
+    .big_main {
 
-.big_main {
-    /* margin-top: 46%; */
-    background: #181E27;
-    position: relative;
-    height: 700px;
-}
-
-.main_service_cont{
-    display: flex;
-    justify-content: center;
-}
-
-
-.service_container{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    gap:40px;
-    margin-top: -30px;
-    color: aliceblue;
-    background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
-    border-radius: 30px;
-    width: 300px;
-    position: absolute;
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    height: 50px;
-
-}
-
-.service_icon{
-    width: 50px;
-    height: 50px;
-}
-
-
-
-/* services  */
-
-.services_container{
-    display: flex;
-    justify-content:center;
-}
-
-
-.services{
-    background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
-    margin-left: 30px;
-    margin-right: 30px;
-    border-radius: 30px;
-    padding: 10px;
-    margin-top: 90px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: aliceblue;
-    font-family: 'Onest', sans-serif;
-    width: 300px;
-    height: 450px;
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+        background: #181E27; 
+        height: 1100px;
+        margin-top: -10px;
+    }
+    
+    .main_service_cont{
+        display: flex;
+        justify-content: center;
+    }
     
 
-}
+    .service_container{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap:40px;
+        margin-top: -25px;
+        color: aliceblue;
+        background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
+        border-radius: 30px;
+        width: 300px;
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        height: 50px;
+    
+    }
 
-.electrical{
-    width: 250px;
-    margin-bottom: 20%;
-    border-radius: 30px;
-    transition: transform 0.3s ease-in-out;
-}
+    .service_icon{
+        width: 50px;
+        height: 50px;
+    }
+    
 
-.electrical:hover {
-    transform: scale(1.1); /* Adjust the scale factor as needed */
-}
+    .service_buttons_all{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 50px;
+    }
 
-.service_button{
-    cursor: pointer;
-    margin-top: 30px;
-    height: 40px;
-    width: 190px;
-    border-radius: 30px;
-    color: aliceblue;
-    font-family: 'Onest', sans-serif;
-    background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
+
+
+    .serviceItem {
+        position: relative;
+        display: inline-block; /* or you can use flex, grid depending on your layout */
+        margin-left: 40px;
+        width: 50px;
+    }
+
+    .service_button{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        border-radius: 30px;
+        color: aliceblue;
+  
+        background: var(--black-gradient, radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%));
+        position: relative;
+        font-family: 'Young Serif', serif;
+        font-size: 20px; /* Adjust the size as needed */
+        font-weight: bold; /* Makes the text bold */
+        text-transform: uppercase; /* Converts text to uppercase */
+        letter-spacing: 1px; /* Increases spacing between letters */
+
+
+
+
+    }
+
+
+    .buttonContainer {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        width: 800px;  
+        height: 200px; 
+        border-radius: 30px;
+        box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    }
+
+
+    .hoverImage {
+        /* Adjust the position and size to fit the container */
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        
+        object-fit: cover;
+        transition: opacity 0.3s ease-in-out, left 0.3s ease-in-out;
+    }
+
+    .serviceItem:hover .hoverImage {
+        opacity: 0.5;
+        left: 0;
+    }
+
+
 }
