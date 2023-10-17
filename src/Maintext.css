@@ -7,8 +7,9 @@
     .big_main {
 
         background: #181E27; 
-        height: 1100px;
+        min-height: 100vh;
         margin-top: -10px;
+        padding-bottom: 100px;
     }
     
     .main_service_cont{
@@ -38,21 +39,32 @@
         height: 50px;
     }
     
+    .for_center_all_div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
 
     .service_buttons_all{
         display: flex;
-        flex-direction: column;
+        justify-content: center; /* Centers child elements horizontally */
+        flex-direction: column; /* Keeps child elements stacked vertically */
+        align-items: center; /* Added to center items horizontally */
         gap: 30px;
         margin-top: 50px;
+        width: 100%; /* Ensure this container takes full width */
     }
-
 
 
     .serviceItem {
         position: relative;
         display: inline-block; /* or you can use flex, grid depending on your layout */
-        margin-left: 40px;
-        width: 50px;
+        
+        width: 650px;
+        
     }
 
     .service_button{
@@ -80,8 +92,9 @@
         position: relative;
         overflow: hidden;
         display: inline-block;
-        width: 800px;  
-        height: 200px; 
+        max-width: 100%;  /* Changed to max-width to allow it to be responsive */
+        width: 650px;  /* Make it take full width of the parent up to 800px */
+        height: 200px;
         border-radius: 30px;
         box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
     }

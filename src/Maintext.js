@@ -18,7 +18,7 @@ export function Maintext(){
                         </div>
                         
                     </div>
-
+                
                     <div className='service_buttons_all'>
                         {/* first servis pack */}
                         <div className='serviceItem'>
@@ -42,7 +42,7 @@ export function Maintext(){
                         </div>
 
                         {/* third servis pack */}
-                        <div className='serviceItem'>
+                        <div className='serviceItem' >
                             <div className="buttonContainer">
                                 <Link to={"/service/engineering"}>
                                     <button className='service_button'>Electrical engineering</button>
