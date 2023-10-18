@@ -103,7 +103,7 @@ export function Header() {
                 </div>
             <div className="container">
                 <div className="btn"><Link to={'/'}>{content[language].home}</Link></div>
-                <div className="btn"><a href="three">{content[language].company}</a></div>
+                <div className="btn"><Link to={'/about'}>{content[language].company}</Link></div>
                 <div className="btn"><Link to={'/service'}  >{content[language].services}</Link></div>
                 <div className="btn"><Link to={'/projects'} >{content[language].projects}</Link></div>
                 <div className="btn"><Link  to={'/contact'}  >{content[language].contact}</Link></div> 

@@ -8,6 +8,7 @@ import ProjectPage  from './pages/ProjectPage';
 import ServicePage from './pages/ServicePage'
 import { useState, useEffect } from 'react';
 import mainlogo from './images/elside_logo.jpeg'
+import About from './About';
 
 
 
@@ -42,7 +43,7 @@ function App() {
             <Route path='/contact' element={<Contact />} />
             <Route path='/projects/*' element={<ProjectPage />} />
             <Route path='/service/*' element={<ServicePage />}  />
-
+            <Route path='/about' element={<About />}  />
           </Routes>
         <Footer />
       </div>
