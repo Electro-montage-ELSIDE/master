@@ -62,8 +62,8 @@
 
     .serviceItem {
         position: relative;
-        display: inline-block; /* or you can use flex, grid depending on your layout */
-        
+        display: grid; /* or you can use flex, grid depending on your layout */
+        margin-left: 130px;
         width: 650px;
         
     }
