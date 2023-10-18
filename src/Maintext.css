@@ -82,10 +82,12 @@
         text-transform: uppercase; /* Converts text to uppercase */
         letter-spacing: 1px; /* Increases spacing between letters */
 
-
-
-
     }
+
+    .service_button:hover{
+        color: var(--Orange, #FC7614);
+    }
+
 
 
     .buttonContainer {
@@ -116,6 +118,7 @@
     .serviceItem:hover .hoverImage {
         opacity: 0.5;
         left: 0;
+        
     }
 
     body {

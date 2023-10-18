@@ -11,13 +11,13 @@ export function Maintext(){
     return (
             <div className='big_main'>
                     {/* background styles */}
-                    <div className='body_' >
+                    
                         <div>
                             <div class="wave"></div>
                             <div class="wave"></div>
                             <div class="wave"></div>
                         </div>
-                    </div>
+                    
                                         
                     <div className='main_service_cont' >
                         <div className='service_container'>
@@ -32,7 +32,7 @@ export function Maintext(){
                         <div className='serviceItem'>
                             <div className="buttonContainer">
                                 <Link to={"/service/engineering"}>
-                                    <button className='service_button'>Electrical engineering</button>
+                                    <button className='service_button'>Electrical instalation works</button>
                                     <img src={electrical_image} alt="electrical engineering" className='hoverImage'/>
                                 </Link>
                             </div>
@@ -43,7 +43,7 @@ export function Maintext(){
                         <div className='serviceItem'>
                             <div className="buttonContainer">
                                 <Link to={"/service/engineering"}>
-                                    <button className='service_button'>Electrical engineering</button>
+                                    <button className='service_button'>Fire fighting</button>
                                     <img src={fire} alt="electrical engineering" className='hoverImage'/>
                                 </Link>
                             </div>
@@ -53,7 +53,7 @@ export function Maintext(){
                         <div className='serviceItem' >
                             <div className="buttonContainer">
                                 <Link to={"/service/engineering"}>
-                                    <button className='service_button'>Electrical engineering</button>
+                                    <button className='service_button'>Extra Low Voltage systems  </button>
                                     <img src={low} alt="electrical engineering" className='hoverImage'/>
                                 </Link>
                             </div>
@@ -63,7 +63,7 @@ export function Maintext(){
                         <div className='serviceItem'>
                             <div className="buttonContainer">
                                 <Link to={"/service/engineering"}>
-                                    <button className='service_button'>Electrical engineering</button>
+                                    <button className='service_button'>Disign works</button>
                                     <img src={design} alt="electrical engineering" className='hoverImage'/>
                                 </Link>
                             </div>
