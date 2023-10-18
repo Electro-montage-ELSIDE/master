@@ -9,8 +9,16 @@ import { Link} from 'react-router-dom'
 
 export function Maintext(){
     return (
-        <div className='big_main'>
-                
+            <div className='big_main'>
+                    {/* background styles */}
+                    <div className='body_' >
+                        <div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                        </div>
+                    </div>
+                                        
                     <div className='main_service_cont' >
                         <div className='service_container'>
                             <h2 className='service_header' >S e r v i c e</h2>
