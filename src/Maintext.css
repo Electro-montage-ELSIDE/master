@@ -49,11 +49,12 @@
 
 
     .service_buttons_all{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         justify-content: center; /* Centers child elements horizontally */
         flex-direction: column; /* Keeps child elements stacked vertically */
         align-items: center; /* Added to center items horizontally */
-        gap: 30px;
+        gap: 50px;
         margin-top: 50px;
         width: 100%; /* Ensure this container takes full width */
     }
