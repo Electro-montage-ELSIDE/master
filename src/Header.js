@@ -107,13 +107,14 @@ export function Header() {
                 <div className="btn"><Link to={'/service'}  >{content[language].services}</Link></div>
                 <div className="btn"><Link to={'/projects'} >{content[language].projects}</Link></div>
                 <div className="btn"><Link  to={'/contact'}  >{content[language].contact}</Link></div> 
-                <div  >
+                <div className='language_change'  >
                     <Select 
                         options={languageOptions}
                         defaultValue={languageOptions[0]}
                         onChange={handleLanguageChange} 
                         className="language-select"
                         classNamePrefix="mySelect"
+                        
                     />
                 </div>
                

@@ -163,6 +163,22 @@
 
 }
 
+/* language select styles  */
+
+
+
+.language_change{
+	width: 150px;
+}
+
+.mySelect__single-value {
+    color: #000; /* Color of the text */
+}
+
+
+
+
+
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
